@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="731dp"
+            android:layout_height="100dp" app:srcCompat="@drawable/devslopesbanner"
+            android:id="@+id/banner"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:background="@color/colorAccent"/>
+    <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp" app:srcCompat="@drawable/devslopesprofilelogo"
+            android:id="@+id/logo"
+            android:layout_marginTop="75dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"/>
+    <TextView
+            android:text="Devslopes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/devSlopesText"
+            tools:ignore="MissingConstraints"
+            android:textSize="24sp" app:layout_constraintStart_toEndOf="@+id/logo"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/banner"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/camerabutton"
+            android:id="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/devSlopesText"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/favoritebutton"
+            android:id="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/inboxbutton"
+            android:id="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/devSlopesText"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline2"
+                                          app:layout_constraintGuide_percent="0.5"
+                                          android:orientation="vertical"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/dataimage"
+            android:id="@+id/graphImageView"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/ImagesImageView" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintDimensionRatio="1:1" android:layout_marginStart="16dp" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/imagesimage"
+            android:id="@+id/ImagesImageView"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/graphImageView"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/graphImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/graphImageView" android:layout_marginEnd="8dp"
+            app:layout_constraintDimensionRatio="1:1" android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/videosimage"
+            android:scaleType="centerCrop"
+            android:id="@+id/videosImageView"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/codeImageView"
+            app:layout_constraintTop_toTopOf="@+id/ImagesImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/ImagesImageView"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" android:layout_marginStart="8dp"
+            app:layout_constraintDimensionRatio="1:1" android:layout_marginEnd="8dp"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/codeimage"
+            android:id="@+id/codeImageView"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/videosImageView" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/videosImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/videosImageView" app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginEnd="16dp" android:layout_marginStart="8dp"/>
+</android.support.constraint.ConstraintLayout>
